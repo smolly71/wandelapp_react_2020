@@ -10,12 +10,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      msg:'hoi'
+      msg:''
     };
   }
 
   handleInfoChange(msg){
     this.setState({msg:msg});
+  }
+  handleUploadInfo(msg){
+    console.log(msg + ' toegevoegd');
+    this.setState({msg:msg, refresh:true});
   }
 
   render() {
@@ -28,8 +32,8 @@ class App extends Component {
       <div style={style}>
         <Info show={true} msg={this.state.msg}  />
         <Mapgl onChange={this.handleInfoChange.bind(this)} />
-        <UploadRoute />
-        <Routes />
+        <UploadRoute onChange={this.handleUploadInfo.bind(this)}/>
+        <Routes refresh={this.state.refresh} />
       </div>
     );
   }

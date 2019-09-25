@@ -14,7 +14,7 @@ class Mapgl extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      msg: 'hoi',
+      msg: '',
       positionMap: [5.2416815, 51.5885582],
       positionMarker: [5.2416815, 51.5885582],
       geo_options: {
@@ -26,7 +26,6 @@ class Mapgl extends Component {
   }
 
   handlePositionChange(position){
-    console.log('-->' + position);
     if (position[0] && position[1]) {
       this.setState({positionMarker: [position[0], position[1]]});
       this.setState({positionMap: [position[0], position[1]]});

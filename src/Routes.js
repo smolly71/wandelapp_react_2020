@@ -41,6 +41,12 @@ class Routes extends Component {
     }
   }
 
+  componentWillReceiveProps(props) {
+    if (props.refresh) {
+      this.getRoutes();
+    }
+  }
+
   render() {
     const style = {
       flex: '1 1 0'

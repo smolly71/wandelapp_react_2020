@@ -21,13 +21,15 @@ class UploadRoute extends Component {
     const remoteServer = 'https://wandelappbackend-v5.herokuapp.com';
     posttextfile(remoteServer + '/upload?cuid=' + cuid, this.state.selectedFile)
       .then(
-        () => {
-          console.log('succecolle upload')
+        (e) => {
+          console.log('upload ok ' + e);
+          this.props.onChange(this.state.selectedFile.name);
         }
       )
       .catch(
         (e) => {
-          console.log('fout met upload' + e);
+          console.log('fout met upload ' + e);
+          this.props.onChange(this.state.selectedFile.name);
         }
       );
   };
@@ -35,9 +37,8 @@ class UploadRoute extends Component {
   render() {
     return (
       <div>
-        <label>Upload Your File </label>
-        <input type="file" onChange={this.onChangeHandler}/>
-        <button type="button" className="btn btn-info" onClick={this.fileUploadHandler}>Upload File</button>
+        <input type="file" onChange={this.onChangeHandler} />
+        <button type="button" onClick={this.fileUploadHandler}>Upload File</button>
       </div>
     );
   }
