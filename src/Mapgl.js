@@ -5,74 +5,56 @@ import Position from './Position';
 // Meer over mapgl in react:
 // https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md
 
+const Map = ReactMapboxGl({
+  accessToken: "pk.eyJ1IjoiZHZyaWV0IiwiYSI6ImNqajVhdmM1bjFyeTQza3FneGFsZGh2bnEifQ.XuWz5D1wdQAio7AfG1CuFg"
+});
+
+
 class Mapgl extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            position: [5.2416815, 51.5885582]
-        }
+  constructor(props) {
+    super(props);
+    this.state = {
+      msg: 'hoi',
+      positionMap: [5.2416815, 51.5885582],
+      positionMarker: [5.2416815, 51.5885582],
+      geo_options: {
+        enableHighAccuracy: true,
+        maximumAge: 1000,
+        timeout: 5000
+      }
     }
+  }
 
-    handlePositionChange(position){
-        console.log("Position:",position);
-        if (position.coords) {
-            this.setState({position: [position.coords.longitude, position.coords.latitude]});
-        }
+  handlePositionChange(position){
+    console.log('-->' + position);
+    if (position[0] && position[1]) {
+      this.setState({positionMarker: [position[0], position[1]]});
+      this.setState({positionMap: [position[0], position[1]]});
+      this.props.onChange(this.state.positionMarker);
     }
+  }
 
-    componentDidMount(e){
-        console.log(e);
-    }
-
-    render() {
-        const Map = ReactMapboxGl({
-            accessToken: "pk.eyJ1IjoiZHZyaWV0IiwiYSI6ImNqajVhdmM1bjFyeTQza3FneGFsZGh2bnEifQ.XuWz5D1wdQAio7AfG1CuFg"
-        });
-
-        // const geo_options = {
-        //     enableHighAccuracy: true,
-        //     maximumAge: 1000,
-        //     timeout: 10000
-        // };
-
-        //Get routes from server and show these as choices
-        // getroutesjson(remoteserver + '/routes?cuid=' + cuid)
-        //     .then(
-        //         (routesjson) => {
-        //             this.setState("hikes", routesjson);
-        //         },
-        //         (reason) => {
-        //             // Error retreiving routes!
-        //             console.log(reason);
-        //         }
-        //     )
-        //     .catch(
-        //         (e) => {
-        //             console.log(e);
-        //         }
-        //     )
-        // ;
-
-        //Update device location on map
-        // navigator.geolocation.watchPosition(map.geo_success.bind(map), null, geo_options);
-
-        // eslint-disable-next-line
-        return (
-            <div>
-                <Position onChange={this.handlePositionChange.bind(this)} />
-                <Map style="mapbox://styles/mapbox/streets-v8" center = {this.state.position}>
-
-                    <Layer
-                        type="symbol"
-                        id="marker"
-                        layout={{ "icon-image": "marker-15" }}>
-                        <Feature coordinates={this.state.position}/>
-                    </Layer>
-
-                </Map>
-            </div>
-        );
-    }
+  render() {
+    const style = {
+      flex: '1 1 0',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between'
+    };
+    return (
+      <div style={style}>
+        <Position onChange={this.handlePositionChange.bind(this)} refreshRate={this.state.geo_options.timeout} />
+        <Map style="mapbox://styles/mapbox/streets-v8" center = {this.state.positionMap}>
+          <Layer
+            type="symbol"
+            id="marker"
+            layout={{ "icon-image": "marker-15" }}>
+            <Feature coordinates={this.state.positionMarker}/>
+          </Layer>
+        </Map>
+      </div>
+    );
+  }
 }
 
 export default Mapgl;
