@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
 import Position from './Position';
+import mapkey from "./modules/keytext";
 
 // Meer over mapgl in react:
 // https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md
 
 const Map = ReactMapboxGl({
-  accessToken: "pk.eyJ1IjoiZHZyaWV0IiwiYSI6ImNqajVhdmM1bjFyeTQza3FneGFsZGh2bnEifQ.XuWz5D1wdQAio7AfG1CuFg"
+  // Read from keytext.js file
+  accessToken: mapkey()
 });
 
 

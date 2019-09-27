@@ -19,16 +19,16 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Je gaat werken in een projectgroep van 3 tot 4 leden (door docent bepaald).
 * Maak als <u>projectgroep</u> je eigen Github account aan (dus niet als individuele gebruiker).
 * 'Fork' wandelapp_react_jaartal naar jullie nieuwe account (forking is kopieren).
-* Importeer de issues m.b.v. https://gavinr.com/2016/07/04/github-csv-import/
+* Neem de issues uit het origineel (titel en omschrijving) over naar jullie project.
 * Ieder lid van de projectgroep maakt in bv. Webstorm een lokale gitkopie (clone).
 * Vergeet niet een npm install te doen (waarom?)
 * Je werkt aan dit project volgens de scrum-methode. Bepaal de rollen:
-  - scrummaster
-  - product owner
+  - scrummaster en developer
   - developers
+  - de docent is de product owner
 * Maak in Trello een scrumboard met een backlog van de openstaande issues.
-* De productowner bepaalt de prioriteit van de backlogitems.
-* Werk een aantal backlogitems uit zodat je kunt pokeren.
+* Jullie bepalen gezamenlijk de prioriteit van de backlog-items.
+* Werk een aantal backlog-items uit zodat je kunt pokeren.
 * Bepaal welke onderdelen je in de volgende sprint gaat maken. Een sprint mag maximaal 3 weken duren (9 uur per week). In totaal heb je 6 weken, dus twee sprints die ieder worden afgesloten met een demo.
 * Let op: niet ALLE issues hoeven per se opgelost te worden in deze zes weken! Het gaat om kwaliteit en niet om kwantiteit.
 * <u>Vraag aan de docent of de gekozen items voor de sprint akkoord zijn.</u>
@@ -47,7 +47,7 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * De verschillende documenten zijn in de juiste mappen terug te vinden. 
 * Het Trello-board / scrumboard is gebruikt tijdens de ontwikkeling.
 * Ieder lid van het team heeft zich maximaal ingezet.
-* Ieder lid van het team heeft onderdelen gemaakt (dat kan ook m.b.v. pair programming zijn geweest).
+* Ieder lid van het team heeft onderdelen gemaakt waarbij is geprogrammeerd(dat kan ook m.b.v. pair programming zijn geweest).
 
 ### Wandelappbackend
 * De webapp maakt gebruik van een backend (wandelappbackend).
