@@ -7,7 +7,6 @@ import mapkey from "./modules/keytext";
 // https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md
 
 const Map = ReactMapboxGl({
-  // Read from keytext.js file
   accessToken: mapkey()
 });
 
