@@ -1,8 +1,8 @@
 {
-  "name": "team_generator",
+  "name": "wandelapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.dennisvanriet/groupgenerator/",
+  "homepage": "https://www.dennisvanriet/wandelapp/",
   "dependencies": {
     "jquery": "^3.4.1",
     "mapbox-gl": "^1.4.1",
