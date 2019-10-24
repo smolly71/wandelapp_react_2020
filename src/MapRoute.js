@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
+import ReactMapboxGl, {GeoJSONLayer, Layer, Feature } from "react-mapbox-gl";
 import Position from './Position';
 import mapkey from "./modules/keytext";
 
@@ -11,7 +11,7 @@ const Map = ReactMapboxGl({
 });
 
 
-class Mapgl extends Component {
+class MapRoute extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +21,7 @@ class Mapgl extends Component {
       geo_options: {
         enableHighAccuracy: true,
         maximumAge: 1000,
-        timeout: 5000
+        timeout: 15000
       }
     }
   }
@@ -30,7 +30,7 @@ class Mapgl extends Component {
     if (position[0] && position[1]) {
       this.setState({positionMarker: [position[0], position[1]]});
       this.setState({positionMap: [position[0], position[1]]});
-      this.props.onChange(this.state.positionMarker);
+      this.props.onMessage(this.state.positionMarker);
     }
   }
 
@@ -41,10 +41,16 @@ class Mapgl extends Component {
       flexDirection: 'column',
       justifyContent: 'space-between'
     };
+
     return (
       <div style={style}>
         <Position onChange={this.handlePositionChange.bind(this)} refreshRate={this.state.geo_options.timeout} />
-        <Map style="mapbox://styles/mapbox/streets-v8" center = {this.state.positionMap}>
+        <Map style="mapbox://styles/mapbox/streets-v8" center={this.state.positionMap}>
+          <GeoJSONLayer
+            lineLayout={{"line-join": "round", "line-cap": "round"}}
+            linePaint={{"line-color": "#ff0000", "line-width": 8}}
+            data={this.props.geojson}>
+          </GeoJSONLayer>
           <Layer
             type="symbol"
             id="marker"
@@ -57,4 +63,4 @@ class Mapgl extends Component {
   }
 }
 
-export default Mapgl;
+export default MapRoute;

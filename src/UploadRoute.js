@@ -23,13 +23,13 @@ class UploadRoute extends Component {
       .then(
         (e) => {
           console.log('upload ok ' + e);
-          this.props.onChange(this.state.selectedFile.name);
+          this.props.onUpdated(this.state.selectedFile.name);
         }
       )
       .catch(
         (e) => {
           console.log('fout met upload ' + e);
-          this.props.onChange(this.state.selectedFile.name);
+          this.props.onUpdated(this.state.selectedFile.name);
         }
       );
   };

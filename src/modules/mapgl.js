@@ -3,7 +3,7 @@ import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
 // class Mapboxgl {
 //     constructor(){
 //         mapboxgl.accessToken = 'pk.eyJ1IjoiZHZyaWV0IiwiYSI6ImNqajVhdmM1bjFyeTQza3FneGFsZGh2bnEifQ.XuWz5D1wdQAio7AfG1CuFg';
-//         return new mapboxgl.Mapgl({
+//         return new mapboxgl.MapRoute({
 //             container: 'map', // container id
 //             style: 'mapbox://styles/mapbox/streets-v8',
 //             center: [4.895168, 52.370216], // starting position

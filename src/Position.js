@@ -12,7 +12,6 @@ class Position extends Component {
   componentDidMount() {
     this.interval = setInterval(() => {
       navigator.geolocation.getCurrentPosition((position)=>{
-        // console.log({position: [position.coords.longitude, position.coords.latitude]});
         this.setState({position: [position.coords.longitude, position.coords.latitude]});
       });
       this.props.onChange(this.state.position);

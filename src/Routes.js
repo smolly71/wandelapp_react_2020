@@ -47,6 +47,10 @@ class Routes extends Component {
     }
   }
 
+  selectRoute = (data) => {
+    this.props.onRouteSelect(data.json);
+  }
+
   render() {
     const style = {
       flex: '1 1 0'
@@ -55,7 +59,7 @@ class Routes extends Component {
       <div style={style}>
         <ul>
           {this.state.routes.map(route =>
-            <li key={route.data._id}>{route.data.json.features[0].properties.name}</li>
+            <li onClick={this.selectRoute.bind(this, route.data)} key={route.data._id}>{route.data.json.features[0].properties.name}</li>
           )}
         </ul>
       </div>
