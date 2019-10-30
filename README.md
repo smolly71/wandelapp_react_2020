@@ -1,4 +1,4 @@
-# webapp 'Wandelen met Pietje Puk'
+# webapp 'Wandelapp'
 A student project in which they have to add new features.
 
 ## Voor de student
