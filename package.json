@@ -5,11 +5,11 @@
   "homepage": "https://www.dennisvanriet/wandelapp/",
   "dependencies": {
     "jquery": "^3.4.1",
-    "mapbox-gl": "^1.4.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-mapbox-gl": "^4.7.2",
-    "react-scripts": "^3.2.0",
+    "mapbox-gl": "^1.9.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-mapbox-gl": "^4.8.3",
+    "react-scripts": "^3.4.1",
     "typeface-roboto": "0.0.54"
   },
   "scripts": {
