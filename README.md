@@ -42,13 +42,6 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Documenten volgens de mappenstructuur zoals die is aangeleverd.
 * Github repository met daarin een tag van de laatst werkende versie (het resultaat van de laatste demo).
 
-### Beoordeling
-* Elke demo is door de scrummaster en het ontwikkelteam op professionele wijze uitgevoerd.
-* De verschillende documenten zijn in de juiste mappen terug te vinden. 
-* Het Trello-board / scrumboard is gebruikt tijdens de ontwikkeling.
-* Elk lid van het team heeft zich maximaal ingezet.
-* Elk lid van het team heeft onderdelen gemaakt waarbij is geprogrammeerd (dat kan ook m.b.v. pair programming zijn geweest).
-
 ### Wandelappbackend
 * De webapp maakt gebruik van een backend (wandelappbackend).
 * Om de checken of deze draait ga je naar https://wandelappbackend-v5.herokuapp.com/health (Heroku)
