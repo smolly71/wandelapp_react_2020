@@ -17,11 +17,10 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 ### Praktisch
 
 * Je gaat werken in een projectgroep van 3 tot 4 leden (door docent bepaald).
-* Maak als <u>projectgroep</u> je eigen Github account aan (dus niet als individuele gebruiker).
-* 'Fork' wandelapp_react_jaartal naar jullie nieuwe account (forking is kopieren).
-* Neem de issues uit het origineel (titel en omschrijving) over naar jullie project.
-* Ieder lid van de projectgroep maakt in bv. Webstorm een lokale gitkopie (clone).
-* Vergeet niet een npm install te doen.
+* 'Fork' wandelapp_react_jaartal (forking is kopieren) naar een nieuw account of naar een bestaand account van één projectlid.
+* Neem de issues uit het origineel (titel en omschrijving) over naar deze kopie.
+* Ieder lid van de projectgroep clonet het geforkte project naar een lokaal project.
+* Vergeet niet om lokaal een een npm install te doen.
 * Je werkt aan dit project volgens de scrum-methode. Bepaal de rollen:
   - scrummaster en developer
   - developers
@@ -29,13 +28,12 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Maak in Trello een scrumboard met een backlog van de openstaande issues.
 * Jullie bepalen gezamenlijk de prioriteit van de backlog-items.
 * Werk een aantal backlog-items uit zodat je kunt pokeren.
-* Bepaal welke onderdelen je in de volgende sprint gaat maken. Een sprint mag maximaal 3 weken duren (9 uur per week). In totaal heb je 6 weken, dus twee sprints die ieder worden afgesloten met een demo.
+* Bepaal welke onderdelen je in de volgende sprint gaat maken (en leg dat voor aan de product owner). Een sprint mag maximaal 3 weken duren (9 uur per week). In totaal heb je 6 weken, dus minimaal twee sprints die ieder worden afgesloten met een demo.
 * Let op: niet ALLE issues hoeven per se opgelost te worden in deze zes weken! Het gaat om kwaliteit en niet om kwantiteit.
-* <u>Vraag aan de docent of de gekozen items voor de sprint akkoord zijn.</u>
 * Start de ontwikkeling aan de hand van het scrumboard.
 * Werk met branches tijdens de ontwikkeling! Bekijk: https://www.youtube.com/watch?v=SBuxRiPk2Zg en kies een strategie.
 * <u>Als tijdens de ontwikkeling tegen problemen aanloopt of extra instructie nodig hebt, ga naar de docent.</u>.
-* <u>Vergeet de retrospective niet.</u> 
+* <u>Vergeet de retrospective aan het einde niet.</u> 
 
 
 ### Oplevering
