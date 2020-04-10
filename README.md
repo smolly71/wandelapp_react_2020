@@ -7,7 +7,7 @@ Jij en je projectgroep zijn werkzaam bij het fictieve bedrijf 'StudentROCTilburg
 Voor hen is eerder aan een webapp ontwikkelt dat is bedoeld voor wandelaars. Het heet 'Wandelen met Pietje Puk' maar het is nog niet af. In het kort komt het erop neer dat wandelaars op hun telefoon een wandelroute selecteren en een marker aangeeft waar ze op die route lopen zodat ze de weg niet kwijtraken.
 
 Zoals alle documentatie bij 'StudentROCTilburg' wordt de documentatie die hoort bij dit project op systematische wijze opgeslagen:
-Zie de meegeleverde 'documentatie_wandelnet.zip'. Hierin is onder andere het projectplan te vinden en een Service Level Agreement waarin beschreven is waaraan de bedrijven zich moeten houden. NEEM DIE DOCUMENTATIE GOED DOOR!
+Zie de meegeleverde 'documentatie_wandelnet.zip'. Hierin is onder andere het projectplan te vinden en een Service Level Agreement waarin beschreven is waaraan de bedrijven zich moeten houden.
 
 Bij dit project hoort een ander project, namelijk wandelappbackend. Hierin hoeft niets ontwikkeld te worden maar je hebt het wel nodig om routes in op te slaan of uit te lezen.
 
@@ -21,7 +21,7 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * 'Fork' wandelapp_react_jaartal naar jullie nieuwe account (forking is kopieren).
 * Neem de issues uit het origineel (titel en omschrijving) over naar jullie project.
 * Ieder lid van de projectgroep maakt in bv. Webstorm een lokale gitkopie (clone).
-* Vergeet niet een npm install te doen (waarom?)
+* Vergeet niet een npm install te doen.
 * Je werkt aan dit project volgens de scrum-methode. Bepaal de rollen:
   - scrummaster en developer
   - developers
@@ -35,7 +35,7 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Start de ontwikkeling aan de hand van het scrumboard.
 * Werk met branches tijdens de ontwikkeling! Bekijk: https://www.youtube.com/watch?v=SBuxRiPk2Zg en kies een strategie.
 * <u>Als tijdens de ontwikkeling tegen problemen aanloopt of extra instructie nodig hebt, ga naar de docent.</u>.
-* <u>Na drie weken wordt klassikaal een retrospective gedaan waarin problemen worden benoemd.</u> 
+* <u>Vergeet de retrospective niet.</u> 
 
 
 ### Oplevering
@@ -46,8 +46,8 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Elke demo is door de scrummaster en het ontwikkelteam op professionele wijze uitgevoerd.
 * De verschillende documenten zijn in de juiste mappen terug te vinden. 
 * Het Trello-board / scrumboard is gebruikt tijdens de ontwikkeling.
-* Ieder lid van het team heeft zich maximaal ingezet.
-* Ieder lid van het team heeft onderdelen gemaakt waarbij is geprogrammeerd(dat kan ook m.b.v. pair programming zijn geweest).
+* Elk lid van het team heeft zich maximaal ingezet.
+* Elk lid van het team heeft onderdelen gemaakt waarbij is geprogrammeerd (dat kan ook m.b.v. pair programming zijn geweest).
 
 ### Wandelappbackend
 * De webapp maakt gebruik van een backend (wandelappbackend).
