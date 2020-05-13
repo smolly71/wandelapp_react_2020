@@ -4,7 +4,7 @@ A student project in which they have to add new features.
 ## Voor de student
 Jij en je projectgroep zijn werkzaam bij het fictieve bedrijf 'StudentROCTilburg'. Het bedrijf heeft verschillende klanten. Een van die klanten is het bedrijf 'WandelNet'.
 
-Voor hen is eerder aan een webapp ontwikkelt dat is bedoeld voor wandelaars. Het heet 'Wandelen met Pietje Puk' maar het is nog niet af. In het kort komt het erop neer dat wandelaars op hun telefoon een wandelroute selecteren en een marker aangeeft waar ze op die route lopen zodat ze de weg niet kwijtraken.
+Voor hen is eerder aan een webapp ontwikkeld. Deze app is een hulpmiddel voor wandelaars maar is nog niet af. In het kort komt het erop neer dat wandelaars op hun telefoon een wandelroute selecteren en een marker aangeeft waar ze op die route lopen zodat ze de weg niet kwijtraken.
 
 Zoals alle documentatie bij 'StudentROCTilburg' wordt de documentatie die hoort bij dit project op systematische wijze opgeslagen:
 Zie de meegeleverde 'documentatie_wandelnet.zip'. Hierin is onder andere het projectplan te vinden en een Service Level Agreement waarin beschreven is waaraan de bedrijven zich moeten houden.
@@ -21,6 +21,7 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Neem de issues uit het origineel (titel en omschrijving) over naar deze kopie.
 * Ieder lid van de projectgroep clonet het geforkte project naar een lokaal project.
 * Vergeet niet om lokaal een een npm install te doen.
+* In keytext_AANPASSEN.js (NOOIT UPLOADEN NAAR GITHUB) is een key voor MapboxGL nodig: https://docs.mapbox.com/help/glossary/access-token/
 * Je werkt aan dit project volgens de scrum-methode. Bepaal de rollen:
   - scrummaster en developer
   - developers
