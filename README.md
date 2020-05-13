@@ -19,6 +19,7 @@ Zoals vermeld is het project nog niet af, in de issues van dit project staan ver
 * Je gaat werken in een projectgroep van 3 tot 4 leden (door docent bepaald).
 * 'Fork' wandelapp_react_jaartal (forking is kopieren) naar een nieuw account of naar een bestaand account van één projectlid.
 * Neem de issues uit het origineel (titel en omschrijving) over naar deze kopie.
+Je kunt daarvoor https://github.com/gavinr/github-csv-tools gebruiken om issues.csv te importeren.
 * Ieder lid van de projectgroep clonet het geforkte project naar een lokaal project.
 * Vergeet niet om lokaal een een npm install te doen.
 * In keytext_AANPASSEN.js (NOOIT UPLOADEN NAAR GITHUB) is een key voor MapboxGL nodig: https://docs.mapbox.com/help/glossary/access-token/
