@@ -1,0 +1,39 @@
+number,title,labels,state,assignees,milestone,comments,created_at,updated_at,closed_at,body
+19,Geen omschrijving van de route,,open,,null,0,2019-10-24T19:00:52Z,2019-10-24T19:00:52Z,null,In de lijst van alle routes moet bij elke route ook de omschrijving staan (staat in geoJson)
+18,Points of Interest (POI) worden niet getoond,duplicate,closed,,null,0,2019-10-24T18:58:48Z,2019-10-24T19:01:35Z,2019-10-24T19:01:35Z,De POI's die in de GeoJson staan moeten getoond worden zodra je er met de muis overheen gaat.
+17,Onderhoudsplan,,open,,null,0,2019-09-26T17:28:52Z,2019-10-24T19:25:38Z,null,"Een webapp is nooit af en vergt continu onderhoud. Hoe het wordt onderhouden is beschreven in het onderhoudsplan of SLA (Service Level Agreement) waarin is afgesproken wie waarvoor verantwoordelijk is met afspraken over tijd etc.:
+
+Instrueren nieuwe gebruikers?
+Afhandeling van klachten en vragen?
+Aanpassen inhoud?
+Verhelpen van bugs binnen hoeveel tijd?
+Registreren van nieuwe wensen?
+Verhelpen van nieuwe wensen?
+Maximale down-tijd?
+Eerder is al een SLA opgesteld. Aan jou om hier aan te voldoen:
+SLA_Wandelapp.docx"
+16,Implementatieplan,,open,,null,0,2019-09-26T17:28:33Z,2019-09-26T17:28:33Z,null,"Om de risico's te verlagen bij de uiteindelijke oplevering van het eindproduct is er een plan nodig.
+Dit moet nog geschreven worden:
+
+Wat is er nodig om het systeem live te zetten (server, updates, wachtwoorden, cursus geven, op welk tijdstip etc.)?
+Als de uitrol mislukt zal een fallback nodig zijn om terug te keren naar de oude situatie (eventueel backup terugzetten, bestaande server standby, etc.)."
+15,Keuze voor satellietweergave,,open,,null,0,2019-09-26T17:27:58Z,2020-04-10T08:35:04Z,null,Op dit moment zie je op de kaart alleen een stratenplan. Is het mogelijk om de gebruiker te laten kiezen voor een satellietweergave?
+14,jquery ajax vervangen door fetch,,open,,null,0,2019-09-26T17:27:37Z,2019-09-26T17:27:37Z,null,"jQuery wordt alleen gebruikt voor een AJAX request in routes.js.
+Kan dit niet vervangen worden door de nieuwe fetch API?"
+13,Lage score voor 'Progressive Web App' onder Audits in Developer Tools,,open,,null,0,2019-09-26T17:27:02Z,2019-09-26T17:27:02Z,null,"Lage score voor 'Progressive Web App' onder Audits in Developer Tools. Ook is de performance niet goed. Genoemde punten verbeteren au.b.
+Het gebruik van een service worker om de app offline te maken wordt ook al genoemd in een ander issue."
+12,Tonen route na uploaden,,open,,null,0,2019-09-26T17:24:57Z,2019-09-26T17:24:57Z,null,Nadat een route is geupload (in de lijst met routes) moet deze direct getoond worden.
+11,Centreren,,open,,null,0,2019-09-26T17:23:57Z,2019-09-26T17:23:57Z,null,Maak het mogelijk voor de gebruiker om te kiezen of de kaart automatisch wordt gecentreerd of niet.
+10,POI,,open,,null,0,2019-09-26T17:23:34Z,2019-09-26T17:23:34Z,null,"De beschrijving die bij points of interest (POI) horen, moeten in een popup getoond worden nadat er op wordt geklikt."
+9,Routes worden niet getoond in de kaart,,closed,,null,1,2019-09-26T17:22:33Z,2019-10-24T18:57:12Z,2019-10-24T18:57:12Z,Als je op een route klikt (in de lijst met routes) moet deze worden getoond.
+8,Offline,,open,,null,0,2019-09-26T17:21:22Z,2019-09-26T17:21:22Z,null,"Als er geen internetconnectie is, werkt de app niet. Dit is niet handig als je bijvoorbeeld op de Veluwe loopt.
+Graag offline beschikbaar maken."
+7,Dezelfde routes,,open,,null,0,2019-09-26T17:21:04Z,2019-09-26T17:21:04Z,null,Het lijkt erop dat je dezelfde route meerdere keren kunt uploaden.
+6,Alle routes worden getoond,,open,,null,0,2019-09-26T17:20:41Z,2019-09-26T17:20:41Z,null,"De geüploade routes zijn niet persoonlijk, alle routes zijn voor iedereen zichtbaar. Dit zou persoonlijk moeten zijn. Hierbij is vermoedelijk de documentatie van wandelappbackend nodig."
+5,Ontwerp,,open,,null,0,2019-09-26T17:20:17Z,2019-09-26T17:20:17Z,null,Er moet naar het ontwerp gekeken worden.
+4,Upload-knop,,open,,null,0,2019-09-26T17:19:50Z,2019-09-26T17:19:50Z,null,De opmaak van de knop ‘Choose file’ kan beter. Ook zou de tekst anders moeten zijn want je kunt alleen gpx-bestanden uploaden.
+3,Scrollgedrag,,open,,null,0,2019-09-26T17:19:08Z,2019-09-26T17:19:08Z,null,"Als je naar beneden wilt scrollen terwijl de pointer op de kaart (map) staat, wordt de kaart uitgezoomd. In- en uitzoomen alleen mogelijk maken met plus- en minknop of met twee vingers (voor op mobile device)."
+2,popup met info hoe de app te gebruiken,,open,,null,0,2019-09-26T17:18:28Z,2019-09-26T17:18:28Z,null,"popup met info hoe de app te gebruiken. Zoals Google dat doet (ok, got it)
+![google_vb](https://user-images.githubusercontent.com/5569113/65710016-696b5680-e092-11e9-8d92-f3d6362216c3.png)
+"
+1,Verwijderen route,,open,,null,0,2019-09-26T17:16:57Z,2019-09-26T17:16:57Z,null,Het is nog niet mogelijk om een route te verwijderen.
