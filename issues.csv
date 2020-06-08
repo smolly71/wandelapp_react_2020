@@ -32,7 +32,7 @@ Graag offline beschikbaar maken."
 6,Alle routes worden getoond,,open,,null,0,2019-09-26T17:20:41Z,2019-09-26T17:20:41Z,null,"De geüploade routes zijn niet persoonlijk, alle routes zijn voor iedereen zichtbaar. Dit zou persoonlijk moeten zijn. Hierbij is vermoedelijk de documentatie van wandelappbackend nodig."
 5,Ontwerp,,open,,null,0,2019-09-26T17:20:17Z,2019-09-26T17:20:17Z,null,Er moet naar het ontwerp gekeken worden.
 4,Upload-knop,,open,,null,0,2019-09-26T17:19:50Z,2019-09-26T17:19:50Z,null,De opmaak van de knop ‘Choose file’ kan beter. Ook zou de tekst anders moeten zijn want je kunt alleen gpx-bestanden uploaden.
-3,Scrollgedrag,,open,,null,0,2019-09-26T17:19:08Z,2019-09-26T17:19:08Z,null,"Als je naar beneden wilt scrollen terwijl de pointer op de kaart (map) staat, wordt de kaart uitgezoomd. In- en uitzoomen alleen mogelijk maken met plus- en minknop of met twee vingers (voor op mobile device)."
+3,Scrollgedrag,,closed,,null,0,2019-09-26T17:19:08Z,2019-09-26T17:19:08Z,null,"Als je naar beneden wilt scrollen terwijl de pointer op de kaart (map) staat, wordt de kaart uitgezoomd. In- en uitzoomen alleen mogelijk maken met plus- en minknop of met twee vingers (voor op mobile device)."
 2,popup met info hoe de app te gebruiken,,open,,null,0,2019-09-26T17:18:28Z,2019-09-26T17:18:28Z,null,"popup met info hoe de app te gebruiken. Zoals Google dat doet (ok, got it)
 ![google_vb](https://user-images.githubusercontent.com/5569113/65710016-696b5680-e092-11e9-8d92-f3d6362216c3.png)
 "
