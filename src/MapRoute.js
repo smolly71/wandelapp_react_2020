@@ -7,7 +7,8 @@ import Position from './Position';
 // https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md
 
 const Map = ReactMapboxGl({
-  accessToken: mapkey()
+  accessToken: mapkey(),
+  scrollZoom: false
 });
 
 
@@ -18,6 +19,7 @@ class MapRoute extends Component {
       msg: '',
       positionMap: [5.2416815, 51.5885582],
       positionMarker: [5.2416815, 51.5885582],
+      // scrollZoom: false,
       geo_options: {
         enableHighAccuracy: true,
         maximumAge: 1000,

@@ -144,5 +144,4 @@ export default class MapBox {
             .addTo(this.map);
         this.center(location);
     }
-
 }
