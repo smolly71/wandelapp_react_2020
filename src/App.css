@@ -1,26 +1,11 @@
-* {
+/* * {
   margin: 0;
   font-family: 'Source Sans Pro',sans-serif;
   font-size: 16px;
   box-sizing: border-box;
 
-}
-body {
+} */
+/* body {
   background-color: #b4e0e1;
-}
+} */
 
-.mapboxgl-map {
-}
-
-#root > div:nth-child(1) {
-  height:10vh;
-}
-#root > div :nth-child(2) {
-  height:80vh;
-}
-#root > div:nth-child(3) {
-  height:5vh;
-}
-#root > div:nth-child(4) {
-  height:10vh;
-}

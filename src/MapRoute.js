@@ -41,9 +41,16 @@ class MapRoute extends Component {
       flexDirection: 'column',
       justifyContent: 'space-between'
     };
-
+    const styleMap = {
+      position: 'relative',
+      width: '1250px',
+      height: '575px',
+      margin: 'auto',
+      border: '10px solid burlywood',
+      top: '50px'
+    }
     return (
-      <div style={style}>
+      <div style={styleMap}>
         <Position onChange={this.handlePositionChange.bind(this)} refreshRate={this.state.geo_options.timeout} />
         <Map style="mapbox://styles/mapbox/streets-v8" center={this.state.positionMap}>
           <GeoJSONLayer
