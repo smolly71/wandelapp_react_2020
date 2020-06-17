@@ -24,3 +24,27 @@ body {
 #root > div:nth-child(4) {
   height:10vh;
 }
+
+.upload {
+  width: 100%;
+  background-color: #99c7c7;
+  padding: 2vw 5vw;
+}
+
+.upload button {
+  background-color: #91E4BB;
+  padding: 0px 25px;
+  max-height: 7vh;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid #91E4BB;
+  transition: ease-in-out 0.3s all;
+  margin: 0px 15px;
+}
+
+.upload button:hover {
+  background: none;
+  border: 2px solid #000000;
+  transition: ease-in-out 0.3s all;
+  transform: scale(1.1);
+}
