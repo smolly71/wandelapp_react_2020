@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import ReactMapboxGl, {GeoJSONLayer, Layer, Feature } from "react-mapbox-gl";
 import Position from './Position';
-import mapkey from "./modules/keytext";
+  import mapkey from "./modules/keytext";
 
 // Meer over mapgl in react:
 // https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md
 
 const Map = ReactMapboxGl({
-  accessToken: mapkey()
+  accessToken: mapkey(),
+  scrollZoom: false
 });
 
 
@@ -18,6 +19,7 @@ class MapRoute extends Component {
       msg: '',
       positionMap: [5.2416815, 51.5885582],
       positionMarker: [5.2416815, 51.5885582],
+      // scrollZoom: false,
       geo_options: {
         enableHighAccuracy: true,
         maximumAge: 1000,
