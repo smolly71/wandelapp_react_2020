@@ -35,6 +35,15 @@ class UploadRoute extends Component {
   };
 
   render() {
+    
+    const button = {
+      position: 'relative',
+      top: '50px',
+      width: '150px',
+      height: '100px',
+      borderRadius: '5px'
+    }
+    
     return (
       <div class="upload">
         <input type="file" onChange={this.onChangeHandler} />

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactMapboxGl, {GeoJSONLayer, Layer, Feature } from "react-mapbox-gl";
 import Position from './Position';
-import mapkey from "./modules/keytext";
+  import mapkey from "./modules/keytext";
 
 // Meer over mapgl in react:
 // https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md
@@ -19,6 +19,7 @@ class MapRoute extends Component {
       msg: '',
       positionMap: [5.2416815, 51.5885582],
       positionMarker: [5.2416815, 51.5885582],
+      // scrollZoom: false,
       geo_options: {
         enableHighAccuracy: true,
         maximumAge: 1000,
@@ -42,9 +43,16 @@ class MapRoute extends Component {
       flexDirection: 'column',
       justifyContent: 'space-between'
     };
-
+    const styleMap = {
+      position: 'relative',
+      width: '1250px',
+      height: '575px',
+      margin: 'auto',
+      border: '10px solid burlywood',
+      top: '50px'
+    }
     return (
-      <div style={style}>
+      <div style={styleMap}>
         <Position onChange={this.handlePositionChange.bind(this)} refreshRate={this.state.geo_options.timeout} />
         <Map style="mapbox://styles/mapbox/streets-v8" center={this.state.positionMap}>
           <GeoJSONLayer

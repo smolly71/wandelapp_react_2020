@@ -1,0 +1,49 @@
+body {
+    background-color: darkolivegreen;
+    margin: 0;
+    padding: 0;
+}
+.info {
+    position: relative;
+    height: 100px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    top: 20px;
+}
+
+.map {
+  
+   height: 550px;
+}
+
+#root > div:nth-child(1) {
+  height:10vh;
+}
+#root > div :nth-child(2) {
+  height:80vh;
+}
+#root > div:nth-child(3) {
+  height:5vh;
+}
+#root > div:nth-child(4) {
+  height:10vh;
+}
+.upload{
+    height: 150px;
+    width: 1200px;
+}
+.popup {
+  position: relative;
+  top: 100px;
+}
+.button {
+  background-color: turquoise;
+  width: 150px;
+  height: 50px;
+  color: black;
+}
+.popupvenster {
+  position: relative;
+  background-color: turquoise;
+}

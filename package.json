@@ -4,11 +4,15 @@
   "private": true,
   "homepage": "https://www.dennisvanriet/wandelapp/",
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "jquery": "^3.4.1",
     "mapbox-gl": "^1.9.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-bootstrap-modal": "^4.2.0",
     "react-dom": "^16.13.1",
     "react-mapbox-gl": "^4.8.3",
+    "react-script-tag": "^1.1.2",
     "react-scripts": "^3.4.1",
     "typeface-roboto": "0.0.54"
   },
