@@ -46,10 +46,13 @@ class App extends Component {
             <MapRoute onMessage={this.handleInfoChange.bind(this)} geojson={this.state.selectedRoute}/>
             <UploadRoute onUpdated={this.handleUploadInfo.bind(this)}/>
             <Routes refresh={this.state.refresh} onRouteSelect={this.handleRouteSelect.bind(this)}/>
-            <ButtonToolbar>
-            <Button varient='primary' onClick={()=> this.setState({addModalShow:true})}>Tutorial</Button>
+
+          </div>
+          <div class="popup" style={styles}>
+          <ButtonToolbar>
+            <Button class="button" style={styles} varient='primary' onClick={()=> this.setState({addModalShow:true})}>Tutorial</Button>
          </ButtonToolbar>
-         <Popup show={this.state.addModalShow} onHide={addModalClose}></Popup>
+         <Popup class="popupventer" style={styles} show={this.state.addModalShow} onHide={addModalClose}></Popup>
           </div>
       </div>
     );

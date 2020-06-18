@@ -33,3 +33,17 @@ body {
     height: 150px;
     width: 1200px;
 }
+.popup {
+  position: relative;
+  top: 100px;
+}
+.button {
+  background-color: turquoise;
+  width: 150px;
+  height: 50px;
+  color: black;
+}
+.popupvenster {
+  position: relative;
+  background-color: turquoise;
+}
