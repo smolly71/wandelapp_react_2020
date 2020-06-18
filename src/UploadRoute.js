@@ -35,14 +35,7 @@ class UploadRoute extends Component {
   };
 
   render() {
-    const styleupload = {
-       position: 'relative',
-        top: '150px',
-        width: 'auto',
-        height: '500px',
-        background: 'white',
-        color: 'black'
-    }
+    
     const button = {
       position: 'relative',
       top: '50px',
@@ -50,20 +43,11 @@ class UploadRoute extends Component {
       height: '100px',
       borderRadius: '5px'
     }
-    const styleupload2 = {
-      position: 'absolute',
-      left: '50px',
-      top: '50px',
-      width: '550px',
-      height: '200px',
-      border: '2px black dashed'
-    }
+    
     return (
-      <div class="upload" style={styleupload}>
-        <div class="upload2" style={styleupload2}>
-        <input type="file" onChange={this.onChangeHandler} />
-        <button style={button} type="button" onClick={this.fileUploadHandler}>Upload File</button>
-        </div>
+      <div id='box'>
+        <input accept=".gpx" type = "file" onChange = { this.onChangeHandler } />
+        <button  type = "button"  onClick = { this.fileUploadHandler }>Upload File</button>
       </div>
     );
   }

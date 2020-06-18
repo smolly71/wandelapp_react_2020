@@ -9,3 +9,11 @@
   background-color: #b4e0e1;
 } */
 
+#box{
+  background-color: blue;
+  opacity: 0.9;
+  width: 100%;
+  height: 500px;
+  padding: 5px;
+  margin-top: -150px;
+}
