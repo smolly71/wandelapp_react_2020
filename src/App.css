@@ -9,6 +9,46 @@
   background-color: #b4e0e1;
 } */
 
+.mapboxgl-map {
+}
+
+#root > div:nth-child(1) {
+  height:10vh;
+}
+#root > div :nth-child(2) {
+  height:80vh;
+}
+#root > div:nth-child(3) {
+  height:5vh;
+}
+#root > div:nth-child(4) {
+  height:10vh;
+}
+
+.upload {
+  width: 100%;
+  background-color: #99c7c7;
+  padding: 2vw 5vw;
+}
+
+.upload button {
+  background-color: #91E4BB;
+  padding: 0px 25px;
+  max-height: 7vh;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid #91E4BB;
+  transition: ease-in-out 0.3s all;
+  margin: 0px 15px;
+}
+
+.upload button:hover {
+  background: none;
+  border: 2px solid #000000;
+  transition: ease-in-out 0.3s all;
+  transform: scale(1.1);
+}
+=======
 #box{
   background-color: blue;
   opacity: 0.9;
