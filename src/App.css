@@ -29,6 +29,7 @@
   width: 100%;
   background-color: #99c7c7;
   padding: 2vw 5vw;
+  position: absolute;
 }
 
 .upload button {
