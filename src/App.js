@@ -42,7 +42,25 @@ class App extends Component {
     return (
       <div class="info" style={styles}>
         <Info show={true} msg={this.state.msg, "Wandelapp"}  />
-          <div class="map" style={styles}>  
+          <div class="map" style={styles}>
+            <div id="menu">
+              <input
+                  id="streets-v11"
+                  type="radio"
+                  name="rtoggle"
+                  value="streets"
+                  checked="checked"
+              />
+              <label htmlFor="streets-v11">streets</label>
+              <input id="light-v10" type="radio" name="rtoggle" value="light"/>
+              <label htmlFor="light-v10">light</label>
+              <input id="dark-v10" type="radio" name="rtoggle" value="dark"/>
+              <label htmlFor="dark-v10">dark</label>
+              <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors"/>
+              <label htmlFor="outdoors-v11">outdoors</label>
+              <input id="satellite-v9" type="radio" name="rtoggle" value="satellite"/>
+              <label htmlFor="satellite-v9">satellite</label>
+            </div>
             <MapRoute onMessage={this.handleInfoChange.bind(this)} geojson={this.state.selectedRoute}/>
             <UploadRoute onUpdated={this.handleUploadInfo.bind(this)}/>
             <Routes refresh={this.state.refresh} onRouteSelect={this.handleRouteSelect.bind(this)}/>

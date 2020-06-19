@@ -24,7 +24,8 @@ class MapRoute extends Component {
         enableHighAccuracy: true,
         maximumAge: 1000,
         timeout: 15000
-      }
+      },
+      view: 'mapbox://styles/mapbox/streets-v8'
     }
   }
 
@@ -34,6 +35,11 @@ class MapRoute extends Component {
       this.setState({positionMap: [position[0], position[1]]});
       this.props.onMessage(this.state.positionMarker);
     }
+
+  }
+
+  handleViewChange(map){
+    this.state.view = 'mapbox://styles/mapbox/' + map;
   }
 
   render() {
@@ -54,7 +60,7 @@ class MapRoute extends Component {
     return (
       <div style={styleMap}>
         <Position onChange={this.handlePositionChange.bind(this)} refreshRate={this.state.geo_options.timeout} />
-        <Map style="mapbox://styles/mapbox/streets-v8" center={this.state.positionMap}>
+        <Map style={this.state.view} center={this.state.positionMap}>
           <GeoJSONLayer
             lineLayout={{"line-join": "round", "line-cap": "round"}}
             linePaint={{"line-color": "#ff0000", "line-width": 8}}
